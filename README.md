@@ -1,6 +1,8 @@
 # SRResNet-pyTorch
 
-This repository contains the pyTorch implementation of <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802"><strong>Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network </strong></a>.
+This repository contains the pyTorch re-implementation of <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802"><strong>Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network </strong></a>, CVPR17. 
+
+We closely followed the network structure, training strategy and training set as the orignal SRResNet. We also implemented <strong>subpixel convolution layer<strong> as <a href="https://arxiv.org/abs/1609.05158"><strong> Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network</strong></a>, CVPR16.
 
 # Results in terms of PSNR and SSIM
 </ul>
@@ -45,3 +47,9 @@ CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRResNet/SRRes
 
 # Testing
 CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNet_x4.json
+
+# Trained model
+A trained model (16 residual blocks) is provided in </code>trained_models/latest_G.pth</code>.
+
+# SRGAN-pyTorch
+Coming soon
