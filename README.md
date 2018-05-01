@@ -34,3 +34,14 @@ This repository contains the pyTorch implementation of <strong>SRResNet</strong>
 <td align="center">-</td>
 </tr>  
 </tbody></table>
+
+# Dependencies
+1. pytorch 0.2 or above
+
+2. python 3.5
+
+# Training
+CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRResNet/SRResNet_x4.json
+
+# Testing
+CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNet_x4.json
