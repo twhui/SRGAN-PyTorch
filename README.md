@@ -42,6 +42,9 @@ pytorch 0.2 or above
 
 python 3.5
 
+# Training set
+We used a subset of Imagenet dataset ILSVRC2016_CLS-LOC.tar.gz for training our models. The subset can be found in <code>/subset.txt</code> 
+
 # Training
 CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRResNet/SRResNet_x4.json
 
