@@ -2,7 +2,7 @@
 
 This repository contains the pyTorch re-implementation of <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a>, CVPR17. 
 
-We closely followed the network structure, training strategy and training set as the orignal SRResNet. We also implemented <strong>subpixel convolution layer</strong> as <a href="https://arxiv.org/abs/1609.05158">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network</a>, CVPR16.
+We closely followed the network structure, training strategy and training set as the orignal SRResNet. We also implemented <strong>subpixel convolution layer</strong> as <a href="https://arxiv.org/abs/1609.05158">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network</a>, CVPR16. <a href="https://github.com/waihokwok">My collaborator</a> also shares contribution to this repository.
 
 # Results in terms of PSNR and SSIM
 </ul>
