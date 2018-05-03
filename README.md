@@ -93,4 +93,4 @@ A text file that contains PSNR and SSIM results will be generated in <code>/home
 The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN</code> and </code>trained_models/SRResNet</code>, respectively.
 
 # License and Citation
-All code is provided for research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use the code in your research, please cite this github https://github.com/twhui/SRGAN page.
+All code is provided for research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use the code in your research, please cite this github page (https://github.com/twhui/SRGAN).
