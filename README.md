@@ -86,6 +86,9 @@ CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNe
 
 CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRGAN/SRGAN_x4.json
 
+The upsampled images will be generated in the folder <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/test_images</code>.
+A text file that contains PSNR and SSIM evaluations will be generated in the folder <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/log</code>. MODEL_NAME = SRResNet_x4 or SRGAN_x4.
+
 # Trained models
 The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN</code> and </code>trained_models/SRResNet</code>, respectively.
 
