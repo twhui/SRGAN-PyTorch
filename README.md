@@ -10,29 +10,29 @@ We closely followed the network structure, training strategy and training set as
 <thead>
 <tr>
 <th align="center">Dataset</th>
-<th align="center">Custom</th>
+<th align="center">Our</th>
 <th align="center">CVPR17</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="center">Set5</td>
-<td align="center">29.4490/0.8542</td>
-<td align="center">29.40/0.8472</td>
+<td align="center">29.4490 / 0.8542</td>
+<td align="center">29.40 / 0.8472</td>
 </tr>
 <tr>
 <td align="center">Set14</td>
-<td align="center">26.0677/0.7153</td>
-<td align="center">26.02/0.7397</td>
+<td align="center">26.0677 / 0.7153</td>
+<td align="center">26.02 / 0.7397</td>
 </tr>
 <tr>
 <td align="center">BSD100</td>
-<td align="center">24.8665/0.6594</td>
-<td align="center">25.16/0.6688</td>
+<td align="center">24.8665 / 0.6594</td>
+<td align="center">25.16 / 0.6688</td>
 </tr>
 <tr>
 <td align="center">Urban100</td>
-<td align="center">23.9434/0.7277</td>
+<td align="center">23.9434 / 0.7277</td>
 <td align="center">-</td>
 </tr>  
 </tbody></table>
@@ -43,29 +43,29 @@ We closely followed the network structure, training strategy and training set as
 <thead>
 <tr>
 <th align="center">Dataset</th>
-<th align="center">Custom</th>
+<th align="center">Our</th>
 <th align="center">CVPR17</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="center">Set5</td>
-<td align="center">31.9678/0.9007</td>
-<td align="center">32.05/0.9019</td>
+<td align="center">31.9678 / 0.9007</td>
+<td align="center">32.05 / 0.9019</td>
 </tr>
 <tr>
 <td align="center">Set14</td>
-<td align="center">28.5809/0.7972</td>
-<td align="center">28.49/0.8184</td>
+<td align="center">28.5809 / 0.7972</td>
+<td align="center">28.49 / 0.8184</td>
 </tr>
 <tr>
 <td align="center">BSD100</td>
-<td align="center">27.5784/0.7538</td>
-<td align="center">27.58/0.7620</td>
+<td align="center">27.5784 / 0.7538</td>
+<td align="center">27.58 / 0.7620</td>
 </tr>
 <tr>
 <td align="center">Urban100</td>
-<td align="center">26.0479/0.7954</td>
+<td align="center">26.0479 / 0.7954</td>
 <td align="center">-</td>
 </tr>  
 </tbody></table>
