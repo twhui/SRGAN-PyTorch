@@ -1,0 +1,70 @@
+{
+  "name": "SRGAN_x4",
+  "model": "sr_resnet_test",
+  "gpu_ids": [0],
+
+  "datasets": [{
+    "name": "Set5",
+    "mode": "bicubic_down",
+    "phase": "test",
+    "dataroot": "/home/twhui/DATA/datasets/Set5",
+
+    "transform_H": {
+      "modcrop_size": 4
+    },
+    "transform_L": {
+      "downscale": 4
+    }
+  }, {
+    "name": "Set14",
+    "mode": "bicubic_down",
+    "phase": "test",
+    "dataroot": "/home/twhui/DATA/datasets/Set14",
+
+    "transform_H": {
+      "modcrop_size": 4
+    },
+    "transform_L": {
+      "downscale": 4
+    }
+  }, {
+    "name": "BSD100",
+    "mode": "bicubic_down",
+    "phase": "test",
+    "dataroot": "/home/twhui/DATA/datasets/BSD100",
+
+    "transform_H": {
+      "modcrop_size": 4
+    },
+    "transform_L": {
+      "downscale": 4
+    }
+  }, {
+      "name": "Urban100",
+      "mode": "bicubic_down",
+      "phase": "test",
+      "dataroot": "/home/twhui/DATA/datasets/Urban100",
+
+      "transform_H": {
+        "modcrop_size": 4
+      },
+      "transform_L": {
+        "downscale": 4
+      }
+  }],
+
+  "path": {
+    "root": "/home/twhui/Projects/SRGAN",
+    "pretrain_model_G": "/home/twhui/Projects/SRGAN/trained_models/SRGAN/latest_G.pth"
+  },
+
+  "network": {
+    "norm_type": "batch",
+
+    "which_model_G": "sr_resnet",
+    "ngf": 64,
+    "ngb": 16,
+    "input_ngc": 3,
+    "output_ngc": 3
+  }
+}

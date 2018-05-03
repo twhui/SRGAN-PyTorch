@@ -1,0 +1,82 @@
+{
+  "name": "SRGAN_x4",
+  "model": "sr_gan",
+  "gpu_ids": [0],
+
+  "datasets": [{
+    "name": "ILSVRC2016",
+    "mode": "bicubic_down",
+    "phase": "train",
+    "dataroot": "/home/twhui/DATA/datasets/ILSVRC2016_subset",
+    "use_shuffle": true,
+    "n_workers": 8,
+    "batch_size": 16,
+
+    "transform_H": {
+      "crop_size": 96,
+      "use_flip": false
+    },
+    "transform_L": {
+      "downscale": 4
+    }
+  }, {
+    "name": "Set5_14",
+    "mode": "bicubic_down",
+    "phase": "val",
+    "dataroot": "/home/twhui/DATA/datasets/Set5_14",
+
+    "transform_H": {
+      "modcrop_size": 4
+    },
+    "transform_L": {
+      "downscale": 4
+    }
+  }],
+
+  "path": {
+    "root": "/home/twhui/DATA/Checkpoints/SRGAN/",
+    "pretrain_model_G": "/home/twhui/Projects/SRGAN/trained_models/SRResNet/latest_G.pth"
+  },
+
+  "network": {
+    "norm_type": "batch",
+
+    "which_model_G": "sr_resnet",
+    "ngf": 64,
+    "ngb": 16,
+    "input_ngc": 3,
+    "output_ngc": 3,
+
+    "which_model_F": "vgg19_5_4",
+
+    "which_model_D": "single_label_96",
+    "ndf": 64
+  },
+
+  "train" : {
+    "manual_seed": 777,
+    "val_freq": 2e3,
+
+    "niter": 2e5,
+
+    "lr_scheme": "multi_steps",
+    "lr_steps": [1e5],
+    "lr_gamma": 0.1,
+
+    "lr_G": 1e-4,
+    "lr_D": 1e-4,
+
+    "lambda_vgg_G": 1.0,
+    "criterion_vgg_G": "mse",
+
+    "lambda_adversarial_G": 0.001,
+    "lambda_adversarial_D": 1.0,
+    "criterion_adversarial_D": "vanilla"
+  },
+
+  "logger": {
+    "print_freq": 100,
+    "save_checkpoint_freq": 2e4
+  }
+
+}
