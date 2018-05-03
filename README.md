@@ -17,22 +17,22 @@ We closely followed the network structure, training strategy and training set as
 <tbody>
 <tr>
 <td align="center">Set5</td>
-<td align="center">/</td>
-<td align="center">/</td>
+<td align="center">29.4490/0.8542</td>
+<td align="center">29.40/0.8472</td>
 </tr>
 <tr>
 <td align="center">Set14</td>
-<td align="center">/</td>
-<td align="center">/</td>
+<td align="center">26.0677/0.7153</td>
+<td align="center">26.02/0.7397</td>
 </tr>
 <tr>
 <td align="center">BSD100</td>
-<td align="center">/</td>
-<td align="center">/</td>
+<td align="center">24.8665/0.6594</td>
+<td align="center">25.16/0.6688</td>
 </tr>
 <tr>
 <td align="center">Urban100</td>
-<td align="center">/</td>
+<td align="center">23.9434/0.7277</td>
 <td align="center">-</td>
 </tr>  
 </tbody></table>
@@ -71,9 +71,7 @@ We closely followed the network structure, training strategy and training set as
 </tbody></table>
 
 # Dependencies
-pytorch 0.2 or above
-
-python 3.5
+pytorch 0.3+, python 3.5, python-box, scikit-image, numpy
 
 # Training set
 We used a subset of Imagenet dataset ILSVRC2016_CLS-LOC.tar.gz for training our models. The subset can be found in <code>/subset.txt</code> 
@@ -89,5 +87,5 @@ CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNe
 CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRGAN/SRGAN_x4.json
 
 # Trained models
-The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN/latest_G.pth</code> and </code>trained_models/SRResNet/latest_G.pth</code>, respectively.
+The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN</code> and </code>trained_models/SRResNet</code>, respectively.
 
