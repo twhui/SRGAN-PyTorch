@@ -78,16 +78,14 @@ We used a subset of Imagenet dataset ILSVRC2016_CLS-LOC.tar.gz for training our 
 
 # Training
 CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRResNet/SRResNet_x4.json
-
 CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRGAN/SRGAN_x4.json
 
 # Testing
 CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNet_x4.json
-
 CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRGAN/SRGAN_x4.json
 
-The upsampled images will be generated in the folder <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/test_images</code>.
-A text file that contains PSNR and SSIM evaluations will be generated in the folder <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/log</code>. MODEL_NAME = SRResNet_x4 or SRGAN_x4.
+The upsampled images will be generated in <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/test_images</code>. 
+A text file that contains PSNR and SSIM results will be generated in <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/log</code>. MODEL_NAME = SRResNet_x4 or SRGAN_x4.
 
 # Trained models
 The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN</code> and </code>trained_models/SRResNet</code>, respectively.
