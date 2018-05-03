@@ -1,10 +1,43 @@
-# SRResNet-pyTorch
+# SRGAN and SRResNet-pyTorch
 
-This repository contains the pyTorch re-implementation of <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a>, CVPR17. 
+This repository contains the pyTorch re-implementation of <strong>SRGAN</strong> and also <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a>, CVPR17. 
 
-We closely followed the network structure, training strategy and training set as the orignal SRResNet. We also implemented <strong>subpixel convolution layer</strong> as <a href="https://arxiv.org/abs/1609.05158">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network</a>, CVPR16. <a href="https://github.com/waihokwok">My collaborator</a> also shares contribution to this repository.
+We closely followed the network structure, training strategy and training set as the orignal SRGAN and SRResNet. We also implemented <strong>subpixel convolution layer</strong> as <a href="https://arxiv.org/abs/1609.05158">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network</a>, CVPR16. <a href="https://github.com/waihokwok">My collaborator</a> also shares contribution to this repository.
 
-# Results in terms of PSNR and SSIM
+# Results of SRGAN in terms of PSNR and SSIM
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Dataset</th>
+<th align="center">Custom</th>
+<th align="center">CVPR17</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Set5</td>
+<td align="center">/</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td align="center">Set14</td>
+<td align="center">/</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td align="center">BSD100</td>
+<td align="center">/</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td align="center">Urban100</td>
+<td align="center">/</td>
+<td align="center">-</td>
+</tr>  
+</tbody></table>
+
+# Results of SRResNet in terms of PSNR and SSIM
 </ul>
 <table>
 <thead>
@@ -47,12 +80,12 @@ We used a subset of Imagenet dataset ILSVRC2016_CLS-LOC.tar.gz for training our 
 
 # Training
 CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRResNet/SRResNet_x4.json
+CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRGAN/SRGAN_x4.json
 
 # Testing
 CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNet_x4.json
+CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRGAN/SRGAN_x4.json
 
-# Trained model
-A trained model (16 residual blocks) is provided in </code>trained_models/latest_G.pth</code>.
+# Trained models
+The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN/latest_G.pth</code> and </code>trained_models/SRResNet/latest_G.pth</code>, respectively.
 
-# SRGAN-pyTorch
-Coming soon
