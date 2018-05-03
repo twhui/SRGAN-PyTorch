@@ -77,14 +77,12 @@ pytorch 0.3+, python 3.5, python-box, scikit-image, numpy
 We used a subset of Imagenet dataset ILSVRC2016_CLS-LOC.tar.gz for training our models. The subset can be found in <code>/subset.txt</code> 
 
 # Training
-CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRResNet/SRResNet_x4.json
-
-CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRGAN/SRGAN_x4.json
+<pre><code>CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRResNet/SRResNet_x4.json</code></pre>
+<pre><code>CUDA_VISIBLE_DEVICES=0 python ./train.py --option ./options/train/SRGAN/SRGAN_x4.json</code></pre>
 
 # Testing
-CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNet_x4.json
-
-CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRGAN/SRGAN_x4.json
+<pre><code>CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRResNet/SRResNet_x4.json</code></pre>
+<pre><code>CUDA_VISIBLE_DEVICES=0 python ./test.py --option ./options/test/SRGAN/SRGAN_x4.json</code></pre>
 
 The upsampled images will be generated in <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/test_images</code>. 
 A text file that contains PSNR and SSIM results will be generated in <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/log</code>. MODEL_NAME = SRResNet_x4 or SRGAN_x4.
