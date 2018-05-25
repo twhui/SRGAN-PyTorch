@@ -93,7 +93,7 @@ The trained models (16 residual blocks) of SRGAN and SRResNet are available in <
 # License and Citation
 All code and other materials (including but not limited to the tables) are provided for research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use any parts of the code in your research, please acknowledge it appropriately:
 
-<pre><code>@InProceedings{hui16msgnet,    
+<pre><code>@InProceedings{ledigsrgan17,    
  author = {Christian Ledig and Lucas Theis and Ferenc Husz&aacuter and Jose Caballero and Andrew Cunningham and Alejandro Acosta and Andrew Aitken and Alykhan Tejani and Johannes Totz and Zehan Wang and Wenzhe Shi},    
  title  = {Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},    
  booktitle  = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},    
