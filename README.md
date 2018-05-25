@@ -1,6 +1,6 @@
 # SRGAN and SRResNet-pyTorch
 
-This repository contains the pyTorch re-implementation of <strong>SRGAN</strong> and also <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a>, CVPR17. 
+This repository contains the unoffical pyTorch re-implementation of <strong>SRGAN</strong> and also <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a>, CVPR17. 
 
 We closely followed the network structure, training strategy and training set as the orignal SRGAN and SRResNet. We also implemented <strong>subpixel convolution layer</strong> as <a href="https://arxiv.org/abs/1609.05158">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network</a>, CVPR16. <a href="https://github.com/waihokwok">My collaborator</a> also shares contribution to this repository.
 
@@ -91,4 +91,21 @@ A text file that contains PSNR and SSIM results will be generated in <code>/home
 The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN</code> and </code>trained_models/SRResNet</code>, respectively.
 
 # License and Citation
-All code and other materials (including but not limited to the tables) are provided for research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use any parts of the code in your research, please cite this github page (https://github.com/twhui/SRGAN).
+All code and other materials (including but not limited to the tables) are provided for research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use any parts of the code in your research, please acknowledge it appropriately:
+
+<pre><code>@InProceedings{hui16msgnet,    
+ author = {Christian Ledig and Lucas Theis and Ferenc Husz&aacuter and Jose Caballero and Andrew Cunningham and Alejandro Acosta and Andrew Aitken and Alykhan Tejani and Johannes Totz and Zehan Wang and Wenzhe Shi},    
+ title  = {Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},    
+ booktitle  = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},    
+ pages = {4681--4690},  
+ year = {2017}}
+ </code></pre>
+
+<pre><code>@misc{SRGAN and SRResNet-pyTorch,
+  author = {Tak-Wai Hui and Wai-Ho Kwok},
+  title = {SRGAN and SRResNet-pyTorch: PyTorch implementation of Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/twhui/SRGAN}}
+}</code></pre>
