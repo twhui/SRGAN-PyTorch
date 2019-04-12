@@ -1,4 +1,4 @@
-# SRGAN-pyTorch and SRResNet-pyTorch
+# SRGAN-and-SRResNet-pyTorch
 
 This repository contains the unoffical pyTorch implementation of <strong>SRGAN</strong> and also <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a>, CVPR17. 
 
@@ -15,9 +15,9 @@ All code and other materials (including but not limited to the tables) are provi
  year = {2017}}
  </code></pre>
 
-<pre><code>@misc{SRGAN-pyTorch and SRResNet-pyTorch,
+<pre><code>@misc{SRGAN-pyTorch,
   author = {Tak-Wai Hui and Wai-Ho Kwok},
-  title = {SRGAN-pyTorch and SRResNet-pyTorch: PyTorch Implementation of Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},
+  title = {SRGAN-PyTorch: A PyTorch Implementation of Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},
   year = {2018},
   publisher = {GitHub},
   journal = {GitHub repository},
