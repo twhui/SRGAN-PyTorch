@@ -88,7 +88,7 @@ The upsampled images will be generated in <code>/home/twhui/Projects/SRGAN/resul
 A text file that contains PSNR and SSIM results will be generated in <code>/home/twhui/Projects/SRGAN/results/MODEL_NAME/log</code>. MODEL_NAME = SRResNet_x4 or SRGAN_x4.
 
 # Trained models
-The trained models (16 residual blocks) of SRGAN and SRResNet are available in </code>trained_models/SRGAN</code> and </code>trained_models/SRResNet</code>, respectively.
+The trained models (16 residual blocks) of <a href="https://drive.google.com/file/d/1BRRfis9HEWccJJsIEgPg0Ou3zV-3gVq5/view">SRResNet</a> and <a href="https://drive.google.com/file/d/1vAtPLGbdyt--SZQxUl0YKPRQgu6-kR6v/view">SRGAN</a> are available.
 
 # License and Citation
 All code and other materials (including but not limited to the tables) are provided for research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use any parts of the code in your research, please acknowledge it appropriately:
