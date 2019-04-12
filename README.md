@@ -1,4 +1,4 @@
-# SRGAN-and-SRResNet-pyTorch
+# SRGAN-PyTorch
 
 This repository contains the unoffical pyTorch implementation of <strong>SRGAN</strong> and also <strong>SRResNet</strong> in the paper <a href="https://arxiv.org/abs/1609.04802">Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</a>, CVPR17. 
 
