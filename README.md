@@ -17,7 +17,7 @@ All code and other materials (including but not limited to the tables) are provi
 
 <pre><code>@misc{SRGAN-pyTorch and SRResNet-pyTorch,
   author = {Tak-Wai Hui and Wai-Ho Kwok},
-  title = {SRGAN-pyTorch and SRResNet-pyTorch: PyTorch implementation of Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},
+  title = {SRGAN-pyTorch and SRResNet-pyTorch: PyTorch Implementation of Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network},
   year = {2018},
   publisher = {GitHub},
   journal = {GitHub repository},
