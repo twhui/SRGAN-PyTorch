@@ -21,7 +21,7 @@ All code and other materials (including but not limited to the tables) are provi
   year = {2018},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/twhui/SRGAN}}
+  howpublished = {\url{https://github.com/twhui/SRGAN-PyTorch}}
 }</code></pre>
 
 # Results of SRGAN in terms of PSNR and SSIM
