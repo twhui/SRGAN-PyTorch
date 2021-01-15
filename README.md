@@ -5,7 +5,7 @@ This repository contains the unoffical pyTorch implementation of <strong>SRGAN</
 We closely followed the network structure, training strategy and training set as the orignal SRGAN and SRResNet. We also implemented <strong>subpixel convolution layer</strong> as <a href="https://arxiv.org/abs/1609.05158">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network</a>, CVPR16. <a href="https://github.com/waihokwok">My collaborator</a> also shares contribution to this repository.
 
 # License and Citation
-All code and other materials (including but not limited to the tables) are provided for research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use any parts of the code in your research, please acknowledge it appropriately:
+All code and other materials (including but not limited to the tables) are provided for academic research purposes only and without any warranty. Any commercial use requires our consent. If our work helps your research or you use any parts of the code in your research, please acknowledge it appropriately:
 
 <pre><code>@InProceedings{ledigsrgan17,    
  author = {Christian Ledig and Lucas Theis and Ferenc Husz&aacuter and Jose Caballero and Andrew Cunningham and Alejandro Acosta and Andrew Aitken and Alykhan Tejani and Johannes Totz and Zehan Wang and Wenzhe Shi},    
